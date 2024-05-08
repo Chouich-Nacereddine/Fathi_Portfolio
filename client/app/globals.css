@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "JejuHallasan";
+  src: url("/fonts/Nunito-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: JejuHallasan;
+}
+
+body {
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #61bc84);
+  animation: moveLine 2.6s linear infinite;
+}
+
+@keyframes moveLine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* .HomeSection {
+  background-image: url("/assets/home_bg.jpg");
+  background-size: 110%;
+} */
+
+.text-animated {
+  position: relative;
+  width: max-content;
+}
+
+.text-animated h3 {
+  font-weight: 70;
+  color: transparent;
+  -webkit-text-stroke: 0.7px #61bc84;
+  background-image: linear-gradient(#61bc84, #61bc84);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: homeBgText 6s linear infinite;
+  animation-delay: 2s;
+}
+
+.text-animated h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 2px solid #61bc84;
+  z-index: -1;
+  animation: homeCursorText 6s linear infinite;
+  animation-delay: 2s;
+}
+
+
+@keyframes homeBgText {
+  0%,
+  10%,
+  100% {
+    background-position: -10em 0;
+  }
+  65%,
+  85% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes homeCursorText {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  65%,
+  78%,
+  85% {
+    width: 100%;
+    opacity: 1;
+  }
+  75%,
+  81% {
+    opacity: 0;
+  }
+}
+
+.btn {
+  width: max-content;
+  display: flex;
+  padding: 0.25rem 1.5rem;
+  border: none;
+  border-radius: 1em;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid #61bc84;
+  background-color: #61bc84;
+  color: black;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: #61bc84;
+  background-color: transparent;
+}
+
+.btn span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.6s ease;
+  border: 1px solid #61bc84;
+}
+
+.btn span:nth-child(6) {
+  position: relative;
+}
+
+.btn span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+.btn span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+.btn span:nth-child(3) {
+  transform: translate(-0.2em, 1.8em);
+}
+
+.btn span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+.btn span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+.btn:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #ff7961;
+  border-radius: 2.5px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: transparent;
+}
