@@ -176,7 +176,7 @@ header::after {
 }
 
 .scrollbar-custom::-webkit-scrollbar-thumb {
-  background-color: #ff7961;
+  background-color: #61bc84;
   border-radius: 2.5px;
 }
 

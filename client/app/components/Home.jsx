@@ -161,14 +161,14 @@ const Home = () => {
         <div className="hidden w-[50vw] p-0 lg:flex items-center justify-center h-full pt-16">
           <img
             data-aos="fade-down-left"
-            src="/assets/me4.png"
+            src="/assets/me.png"
             alt="me"
-            className=" lg:w-[100%] lg:mr-[10%]"
+            className=" lg:w-[120%] lg:mr-[10%] lg:mt-[13.5%]"
           />
         </div>
         <img
           data-aos="fade-up"
-          src="/assets/me6.png"
+          src="/assets/me.png"
           alt="me"
           className="lg:hidden block w-[50vw]"
         />
