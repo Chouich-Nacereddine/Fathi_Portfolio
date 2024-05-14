@@ -8,6 +8,7 @@ import { TbBrandFiverr } from "react-icons/tb";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import Typed from "typed.js";
+import LottieAnimation from "./LottieAnimation";
 
 const Home = () => {
   const el = useRef(null);
@@ -38,7 +39,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="min-h-screen relative lg:bg-home-bg-img lg:bg-no-repeat lg:bg-top-left lg:bg-100 lg:m-0 mb-10 flex flex-col-reverse mt-[10vh] lg:mt-0 lg:flex-row items-center justify-between h-max overflow-hidden">
+      <section className="min-h-screen relative lg:bg-home-bg-img lg:bg-no-repeat lg:bg-top-left lg:bg-100 lg:m-0 mb-10 flex flex-col-reverse mt-[10vh] lg:mt-0 lg:flex-row items-center justify-between h-max overflow-hidden -z-10">
         <div className=" lg:max-w-[55vw] max-w-[100vw] px-[8%] h-max lg:items-start flex flex-col lg:justify-center items-center lg:pt-0 pt-16 ">
           <div
             className="lg:text-4xl text-2xl tracking-wider overflow-hidden w-max "
@@ -159,12 +160,13 @@ const Home = () => {
         </div>
 
         <div className="hidden w-[50vw] p-0 lg:flex items-center justify-center h-full pt-16">
-          <img
+          <LottieAnimation/>
+          {/* <img
             data-aos="fade-down-left"
             src="/assets/me.png"
             alt="me"
             className=" lg:w-[120%] lg:mr-[10%] lg:mt-[13.5%]"
-          />
+          /> */}
         </div>
         <img
           data-aos="fade-up"

@@ -16,6 +16,7 @@ module.exports = {
       backgroundPosition: {
         "top-left": "0vw 0vh",
       },
+      
     },
   },
 

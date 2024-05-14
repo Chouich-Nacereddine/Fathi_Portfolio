@@ -9,7 +9,7 @@ const Navbar = () => {
   const [activeLink, setActiveLink] = useState("Home");
   return (
     <>
-      <header className="fixed top-0 left-0 w-full py-6 px-[8%] bg-transparent flex justify-between items-center z-[100]">
+      <header className="bg-black bg-opacity-30 fixed top-0 left-0 w-full py-6 px-[8%] flex justify-between items-center z-[100]">
         <Link
           href="/"
           className="text-2xl tracking-wider"
