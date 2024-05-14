@@ -12,7 +12,7 @@ const LottieAnimation = () => {
         container: animationContainer.current,
         animationData: animationData,
         renderer: 'svg',
-        loop: false, // Play the animation only once
+        loop: true, // Play the animation only once
         autoplay: true,
       });
     }
