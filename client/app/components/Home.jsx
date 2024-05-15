@@ -39,7 +39,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="min-h-screen relative lg:bg-home-bg-img lg:bg-no-repeat lg:bg-top-left lg:bg-100 lg:m-0 mb-10 flex flex-col-reverse mt-[10vh] lg:mt-0 lg:flex-row items-center justify-between h-max overflow-hidden -z-10">
+      <section className="aboutShadow min-h-screen relative lg:bg-home-bg-img lg:bg-no-repeat lg:bg-top-left lg:bg-100 lg:m-0 mb-10 flex flex-col-reverse mt-[10vh] lg:mt-0 lg:flex-row items-center justify-between h-max overflow-hidden -z-0">
         <div className=" lg:max-w-[55vw] max-w-[100vw] px-[8%] h-max lg:items-start flex flex-col lg:justify-center items-center lg:pt-0 pt-16 ">
           <div
             className="lg:text-4xl text-2xl tracking-wider overflow-hidden w-max "
@@ -49,8 +49,8 @@ const Home = () => {
               Hi, I'm&nbsp;
               <span className="lg:hidden block">
                 <span className="text-[#61bc84] font-semibold">F</span>
-                athi{" "}
-                <span className="text-[#61bc84] font-semibold">I</span>smail.
+                athi <span className="text-[#61bc84] font-semibold">I</span>
+                smail.
               </span>
               <span className="lg:block hidden">
                 <span ref={el} />
@@ -65,11 +65,12 @@ const Home = () => {
             data-aos-delay="200"
             className="lg:text-base text-xs lg:text-justify text-center w-full mt-2 text-[#ededed] bg-black bg-opacity-30 tracking-wide"
           >
-            I'm a FullStack Developer with a passion for crafting web solutions
-            that blend creativity and functionality. With a strong foundation in
-            both front-end and back-end development, I thrive on turning
-            innovative ideas into seamless digital experiences. Let's build
-            something amazing together.
+            I'm a Network & Cybersecurity Engineer. I specialize
+            in securing digital infrastructures against cyber threats and
+            ensuring robust network defenses. With a solid background in
+            cybersecurity protocols, ethical hacking, and incident response, I
+            am dedicated to safeguarding systems and data from vulnerabilities.
+            Let's fortify your digital assets together.
           </p>
 
           <div
@@ -160,7 +161,7 @@ const Home = () => {
         </div>
 
         <div className="hidden w-[50vw] p-0 lg:flex items-center justify-center h-full pt-16">
-          <LottieAnimation/>
+          <LottieAnimation />
           {/* <img
             data-aos="fade-down-left"
             src="/assets/me.png"

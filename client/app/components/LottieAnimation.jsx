@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+'use client'
+import { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 import animationData from '../../public/assets/Animation.json'; 
 
@@ -7,12 +8,13 @@ const LottieAnimation = () => {
   const animationInstance = useRef(null);
 
   useEffect(() => {
-    if (animationContainer.current && !animationInstance.current) {
+    // Ensure the code runs only in the client-side environment
+    if (typeof window !== 'undefined' && animationContainer.current && !animationInstance.current) {
       animationInstance.current = lottie.loadAnimation({
         container: animationContainer.current,
         animationData: animationData,
         renderer: 'svg',
-        loop: true, // Play the animation only once
+        loop: true,
         autoplay: true,
       });
     }
@@ -26,7 +28,7 @@ const LottieAnimation = () => {
     };
   }, []); // Run effect only on initial mount
 
-  return <div ref={animationContainer} className=' w-full h-full  lg:mr-[10%] lg:mb-[20.5%]'/>;
+  return <div ref={animationContainer} className='w-full h-full lg:mr-[10%] lg:mb-[20.5%]' />;
 };
 
 export default LottieAnimation;
