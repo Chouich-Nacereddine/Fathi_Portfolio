@@ -240,7 +240,83 @@ header::after {
   align-items: center;
   color: #fff;
 }
+
 .container .glass svg {
   font-size: 2.5em;
   fill: #fff;
 }
+
+
+.card-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card .front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card .front-content p {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  background: #61bc84;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(-45deg, #61bc84 0%, #61bc84 100% );
+  color: black;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translateY(-96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  transform: translateY(0);
+}
+
+.card:hover .front-content {
+  transform: translateY(30%);
+}
+
+.card:hover .front-content p {
+  opacity: 0;
+}
+

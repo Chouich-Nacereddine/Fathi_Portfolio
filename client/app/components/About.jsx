@@ -1,7 +1,7 @@
 import React from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
-import Menu from "./Menu";
+
 
 const About = () => {
   return (
@@ -56,7 +56,7 @@ const About = () => {
           >
             <span className="text-[#61bc84]">T</span>ools
           </h1>
-          <div className="container">
+          <div className="container pb-10">
             <div data-text="Github" style={{ "--r": "-15" }} className="glass">
               1
             </div>
