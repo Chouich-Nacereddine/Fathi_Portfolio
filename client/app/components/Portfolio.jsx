@@ -1,4 +1,5 @@
 import React from "react";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
   return (
@@ -16,14 +17,13 @@ const Portfolio = () => {
           </span>
         </h1>
         <div className="flex flex-wrap justify-around gap-10">
-
-          <div class="card-container bg-[#34373b] bg-opacity-35 ">
-            <div class="card">
-              <div class="front-content">
+          <div className="card-container bg-[#34373b] bg-opacity-35 " data-aos="zoom-in-up">
+            <div className="card">
+              <div className="front-content">
                 <p>Hover me</p>
               </div>
-              <div class="content">
-                <p class="heading">Card Hover</p>
+              <div className="content">
+                <p className="heading">Card Hover</p>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipii voluptas ten
                   mollitia pariatur odit, ab minus ratione adipisci accusamus
@@ -34,13 +34,13 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div class="card-container bg-[#34373b] bg-opacity-35 text">
-            <div class="card">
-              <div class="front-content">
+          <div className="card-container bg-[#34373b] bg-opacity-35 text" data-aos="zoom-in-up">
+            <div className="card">
+              <div className="front-content">
                 <p>Hover me</p>
               </div>
-              <div class="content">
-                <p class="heading">Card Hover</p>
+              <div className="content">
+                <p className="heading">Card Hover</p>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipii voluptas ten
                   mollitia pariatur odit, ab minus ratione adipisci accusamus
@@ -51,13 +51,13 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div class="card-container bg-[#34373b] bg-opacity-35 text">
-            <div class="card">
-              <div class="front-content">
+          <div className="card-container bg-[#34373b] bg-opacity-35 text" data-aos="zoom-in-up">
+            <div className="card">
+              <div className="front-content">
                 <p>Hover me</p>
               </div>
-              <div class="content">
-                <p class="heading">Card Hover</p>
+              <div className="content">
+                <p className="heading">Card Hover</p>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipii voluptas ten
                   mollitia pariatur odit, ab minus ratione adipisci accusamus
@@ -66,16 +66,15 @@ const Portfolio = () => {
                 </p>
               </div>
             </div>
-
           </div>
 
-          <div class="card-container bg-[#34373b] bg-opacity-35 text">
-            <div class="card">
-              <div class="front-content">
+          <div className="card-container bg-[#34373b] bg-opacity-35 text" data-aos="zoom-in-up">
+            <div className="card">
+              <div className="front-content">
                 <p>Hover me</p>
               </div>
-              <div class="content">
-                <p class="heading">Card Hover</p>
+              <div className="content">
+                <p className="heading">Card Hover</p>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipii voluptas ten
                   mollitia pariatur odit, ab minus ratione adipisci accusamus
